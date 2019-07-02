@@ -1,3 +1,5 @@
+# __author__ == Кирилл Олейник
+
 def raise_to_power():
     i = input("Введите число:")
     i = int(i)
