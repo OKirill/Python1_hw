@@ -1,4 +1,9 @@
-# fruits = ['apple', 'lemon', 'pineapple', 'watermelon']
+fruits = ['apple', 'lemon', 'pineapple', 'watermelon']
+
+i = 1
+for fruit in fruits:
+    print(i,'.', str.rjust(fruit, 15))
+    i += 1
 
 # Второе задание
 
