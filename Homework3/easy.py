@@ -5,7 +5,6 @@ def adress_date(name, age, city):
 
 print(adress_date('Kirill', 28, 'Moscow'))
 
-array = [5, 13, 4]
 
 
 def max_number(num1, num2, num3):
