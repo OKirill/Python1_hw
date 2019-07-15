@@ -18,9 +18,8 @@ if not re.search(pattern, name):
     print('Имя введено неверно')
 if not re.search(pattern, surname):
     print('Фамилия введена неверно')
-if not re.search('^[a-z0-9_]+@+[a-z0-9]+\.(ru|com|org)', email):
+if not re.search('^[a-z0-9_]+@+[a-z0-9]+\\.(ru|com|org)', email):
     print('email Введен неверно')
-
 
 some_str = '''
 Мороз и солнце; день чудесный!
@@ -55,6 +54,7 @@ some_str = '''
 И берег, милый для меня.'''
 
 import re
+
 pattern = '\.{2,}'
 
 result = re.search(pattern, some_str)
