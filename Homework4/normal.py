@@ -1,14 +1,25 @@
 import re
 
+# name = input(' Введите ваше Имя: ')
+# surname = input('Введите вашу фамилию: ')
+# email = input('Введите ваш  email: ')
+# if re.match('^[А-Я]{1,1}', name):
+#     if re.match('^[А-Я]{1,1}', surname):
+#         if re.findall('[a-z0-9_]+@+[a-z0-9]+\.(ru|com|org)', email):
+#             print('Добрый день, {} {}! Ваш почтовый адрес: {}'.format(name, surname, email))
+# else:
+#     print('Проверьте правильность написания')
+
 name = input(' Введите ваше Имя: ')
 surname = input('Введите вашу фамилию: ')
 email = input('Введите ваш  email: ')
-if re.match('^[А-Я]{1,1}', name):
-    if re.match('^[А-Я]{1,1}', surname):
-        if re.findall('[a-z0-9_]+@+[a-z0-9]+\.(ru|com|org)', email):
-            print('Добрый день, {} {}! Ваш почтовый адрес: {}'.format(name, surname, email))
-else:
-    print('Проверьте правильность написания')
+pattern = '^[А-Я]{1,1}'
+if not re.search(pattern, name):
+    print('Имя введено неверно')
+if not re.search(pattern, surname):
+    print('Фамилия введена неверно')
+if not re.search('^[a-z0-9_]+@+[a-z0-9]+\.(ru|com|org)', email):
+    print('email Введен неверно')
 
 
 some_str = '''
