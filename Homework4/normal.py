@@ -13,7 +13,7 @@ import re
 name = input(' Введите ваше Имя: ')
 surname = input('Введите вашу фамилию: ')
 email = input('Введите ваш  email: ')
-pattern = '^[А-Я]{1,1}'
+pattern = '^[А-ЯЁ][а-яё]+$'
 if not re.search(pattern, name):
     print('Имя введено неверно')
 if not re.search(pattern, surname):
