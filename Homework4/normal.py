@@ -55,11 +55,16 @@ some_str = '''
 
 import re
 
-pattern = '\.{2,}'
+# pattern = '\.{2,}'
+#
+# # result = re.search(pattern, some_str)
+# #
+# # if result:
+# #     print('У нас есть более одной точки')
+# # else:
+# #     print('В тексте нет более одной точки.')
 
-result = re.search(pattern, some_str)
-
-if result:
-    print('У нас есть более одной точки')
+if re.search('\\.{2,}', some_str):
+    print('Несколько точек найдено')
 else:
-    print('В тексте нет более одной точки.')
+    print('Несколько точек не найдено')
