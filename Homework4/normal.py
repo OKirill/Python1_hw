@@ -68,3 +68,14 @@ if re.search('\\.{2,}', some_str):
     print('Несколько точек найдено')
 else:
     print('Несколько точек не найдено')
+
+eq = 'y = -12x + 111.2121'
+x = 2.5
+listeq = eq.split(' ')
+for i in listeq.copy():
+    if i == 'y' or i == '+' or i == '=':
+        listeq.remove(i)
+y = x * int(''.join(listeq[0].split('x'))) + float(listeq[1])
+print(listeq)
+print(y)
+
