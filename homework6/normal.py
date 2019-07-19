@@ -48,8 +48,8 @@ class Fight:
                 print(f'********************** {person2.name} won!!')
 
 
-player = Player('Player1', 100, 10, 50)
-enemy = Enemy('Player2', 100, 10, 50)
+player = Player('Player1', 200, 50, 50)
+enemy = Enemy('Player2', 200, 50, 50)
 
 new_fight = Fight(player, enemy)
 new_fight.start(player, enemy)
