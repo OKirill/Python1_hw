@@ -1,6 +1,7 @@
 import random
 import sys
 
+
 class Barrel:
     def __init__(self, amount):
         self.amount = amount
