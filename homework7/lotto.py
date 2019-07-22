@@ -11,10 +11,10 @@ class Barrel:
     def field(self):
         numbers = [x for x in range(1, self.amount + 1)]
         random.shuffle(numbers)
-        for i, y in enumerate(numbers):
+        for i, current in enumerate(numbers):
             print('{:*^30}'.format('Игра в Лотто'))
-            print(f'Текущий бочонок: {y} (осталось {self.amount - (i + 1)})')
-            yield y
+            print(f'Текущий бочонок: {current} (осталось {self.amount - (i + 1)})')
+            yield current
 
 
 class Game:
