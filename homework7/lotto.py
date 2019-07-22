@@ -1,7 +1,5 @@
 import random
 import sys
-import time
-
 
 class Barrel:
     def __init__(self, amount):
@@ -69,7 +67,7 @@ class Player(Game):
 def play():
     game = Game(2)
     barrel = Barrel(90)
-    player1 = Player('Игрок')
+    player1 = Player('Ваша карточка')
     player2 = Player('Компьютер')
 
     while True:
@@ -92,7 +90,6 @@ def play():
                 continue
         if inp_user != 'n' and inp_user != 'y':
             print('Введите y or n')
-            time.sleep(1)
             continue
 
 
